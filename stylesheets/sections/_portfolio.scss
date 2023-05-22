@@ -38,6 +38,11 @@
           color: var(--color-white);
           margin-bottom: 1.5rem;
         }
+        p {
+          top: 50%;
+          left: 50%;
+          color:aqua
+        }
         &-icons {
           @include flex-center;
           a {

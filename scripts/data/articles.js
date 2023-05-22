@@ -1,4 +1,4 @@
-const articles = [
+/*const articles = [
     {
         title: "How to Create Your Own Website",
         summary: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus natus voluptas, eos obcaecati recusandae amet?",
@@ -41,6 +41,6 @@ const articles = [
     The image is the name of the image file.
     The url is a link to the article.
      */
-];
+//];
 
-export { articles };
+//export { articles };

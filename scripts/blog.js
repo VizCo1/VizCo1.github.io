@@ -1,4 +1,4 @@
-import { articles } from "./data/articles.js";
+/*import { articles } from "./data/articles.js";
 
 (function() {
     const create = {
@@ -25,4 +25,4 @@ import { articles } from "./data/articles.js";
         item.append(image, text);
         document.querySelector("#articles").append(item);
     }
-})();
+})();*/
