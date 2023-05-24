@@ -24,7 +24,7 @@
     }
     &__text {
       width: 100%;
-      text-align: left;
+      text-align: justify;
       @include respond(tab-land) {
         margin-bottom: 4.8rem;
       }
@@ -38,6 +38,37 @@
 
         @include respond(phone) {
           font-size: 2rem;
+        }
+      }
+
+      &-labelContainer {
+        height: fit-content;
+        width: fit-content;
+        margin-bottom: 2rem;
+      }
+
+      &-label {
+
+        /*font-size: 1.5rem;
+        font-weight: 700;
+        letter-spacing: .025rem;
+        font-style: normal;
+        text-transform: capitalize;
+        color: #0d0049;
+        margin-right: 0.4em;
+        margin-bottom: 0.3em;
+        display: inline-block;*/
+
+        &-General {
+          font-size: 1.5rem;
+          font-weight: 700;
+          color: #0d0049;
+          padding: 0.3rem 0.5rem;
+          box-sizing: border-box;
+          border-style: $LabelBorderStyle;
+          border-width: 0.5rem;
+          border-color: $LabelBorderColor;
+          box-shadow: inset 100px 100px 100px 100px rgba(255, 255, 255, 0.8)
         }
       }
 
@@ -56,26 +87,29 @@
     &__image {
       width: 90%;
       margin: 0 auto;
+      //border-radius: 50%;
 
       @include respond(tab-land) {
         width: 100%;
         margin: 0;
+
       }
       & .thumbnail {
         border: none;
-        box-shadow: 8px 8px 9px 7px rgba(174, 174, 192, 0.4),
-          -5px -5px 15px 7px #ffffff;
-
+        box-shadow: 8px 8px 9px 7px rgba(227, 172, 249, 0.4),
+          -5px -5px 15px 7px #E3ACF9;
+          border-radius: 20px;
         .img-fluid {
           width: 100%;
           height: auto;
           vertical-align: middle;
-          border-radius: 2px;
+          border-radius: 20px;
         }
         @include respond(phone) {
           box-shadow: none;
-          border: 1px solid #d2d2d2;
+          border: 1px solid #E3ACF9;
           margin-bottom: 3.2rem;
+          border-radius: 20px;
           transform: none;
         }
       }
