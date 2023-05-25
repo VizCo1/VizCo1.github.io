@@ -126,9 +126,9 @@
   &::after {
     transform: translate(-98%, -30%) rotate(45deg);
   }
-
-  /*&:hover {
-    box-shadow: 1.5px 1.5px 3px rgba(174, 174, 192, 0.4), -1px -1px 3px #ffffff;
+/*
+  &:hover {
+    box-shadow: 20px 20px 20px rgba(174, 174, 192, 0), -1px -1px 3px #ffffff;
 
     &::after {
       transform: translate(-12%, -30%) rotate(45deg);
