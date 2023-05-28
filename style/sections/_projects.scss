@@ -70,6 +70,21 @@
           border-color: $LabelBorderColor;
           box-shadow: inset 100px 100px 100px 100px rgba(255, 255, 255, 0.8)
         }
+        &-Platform {
+          font-size: 1.5rem;
+          font-weight: 700;
+          padding: 0.3rem 0.5rem;
+          box-sizing: border-box;
+          border-style: $LabelBorderStyle;
+          color:#0d0049;
+          border-width: 0.5rem;
+          border-color: $LabelBorderColor;
+          box-shadow: inset 100px 100px 100px 100px rgba(13, 0, 73, 0);
+
+          .fa-mobile {
+            color: #0d0049;
+          }
+        }
       }
 
       &-info {
