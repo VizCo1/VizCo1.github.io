@@ -16,6 +16,14 @@
     clip-path: none;
   }
 
+  .scroll-down-link-about {
+    display: inline-block;
+    position: initial;
+    align-self: center;
+    bottom: 2000px;
+    transform: translateX(-50%);
+  }
+
   .about-wrapper {
     display: inline-block;
     //justify-content: center;
@@ -59,4 +67,31 @@
       }
     }
   }
+
+  .scroll-down-about {
+    height: 50px;
+    width: 30px;
+    border: 2px solid #000000;
+    border-radius: 50px;
+    cursor: pointer;
+    &::before,
+    &::after {
+      height: 10px;
+      width: 10px;
+      content: "";
+      position: absolute;
+      top: 20%;
+      left: 50%;
+      border: 2px solid $scroll-down-color-about;
+      transform: translate(-50%, -100%) rotate(45deg);
+      border-top: none;
+      border-left: none;
+      animation: scroll-down 1s ease-in-out infinite;
+    }
+    &::after {
+      top: 30%;
+      animation-delay: 0.3s;
+    }
+  }
+
 }
