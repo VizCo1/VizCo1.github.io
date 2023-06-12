@@ -17,6 +17,8 @@
   }
 
   .about-wrapper {
+    display: inline-block;
+    //justify-content: center;
     grid-template-columns: 1fr 1fr;
     @include respond(phone) {
       padding-bottom: 5rem;
@@ -50,6 +52,10 @@
       @include respond(tab-port-sm) {
         align-items: center;
         text-align: center;
+      }
+
+      &-text{
+        font-size: 2rem;
       }
     }
   }
