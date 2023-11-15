@@ -9,7 +9,7 @@ section {
   }
 
   .row {
-    display: grid;
+    display: flex;
     gap: 2rem;
     grid-template-columns: 1fr 2fr;
     grid-template-rows: 1fr;

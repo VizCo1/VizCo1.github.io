@@ -136,6 +136,62 @@
   }*/
 }
 
+.cta-btn--filter {
+  @include supportColorForIE11();
+  border: 2px solid transparent;
+  border-image: linear-gradient(
+    135deg,
+    $primary-color 0%,
+    $secondary-color 100%
+  );
+  border-image-slice: 1;
+  cursor: pointer;
+
+  @include supportIE11() {
+    color: $secondary-color;
+    &:hover {
+      color: $white-color;
+    }
+  }
+
+  // Responsive Button hero style
+  @include respond(phone) {
+    background-image: none;
+    border: 2px solid $secondary-color;
+    box-shadow: none;
+    -webkit-text-fill-color: $secondary-color;
+  }
+
+  &::after {
+    height: 410%;
+    width: 150%;
+    transform: translate(-98%, -25%);
+
+    // Responsive Button hero style
+  }
+
+  &:hover {
+    -webkit-text-fill-color: $white-color;
+    text-decoration: none;
+
+    // Responsive Button hover hero style
+    @include respond(phone) {
+      -webkit-text-fill-color: $secondary-color;
+    }
+
+    &::after {
+      transform: translate(-9%, -25%);
+    }
+  }
+
+  
+}
+
+.cta-btn.cta-btn--filter.active {
+  line-height: 1.75;
+  //border-width: 0.5rem;
+}
+
 // /* Arrow Button */
 // .fa-angle-up {
 //   color: #272727;

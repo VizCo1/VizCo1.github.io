@@ -35,22 +35,18 @@ Have fun creating your portfolio on this template!!! -->
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
     <!-- Fill content with the URL of this portfolio you'll host -->
-    <meta property="og:url" content="https://devfolio.js.org/" />
+    <meta property="og:url" href="./assets/devfolio-logo.png" />
     <!-- Fill content with the title of your portfolio(Recommended to use what you put in <title> tag) -->
     <meta property="og:title" content="Víctor Izquierdo Alegre | Developer" />
     <!-- Give a short description that'll show up when you/someone shares your portfolio on different platform -->
     <meta property="og:description" content="Portfolio of Víctor Izquierdo" />
     <!-- Add a thumbnail image in assets folder and fill the content attr with URL to that thumbnail
       so that a thumbnail image of your portfolio is shown while shared on other platform -->
-    <meta
-      property="og:image"
-      content="./assets/preview.png"
-    />
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
     <!-- Again fill content attr with the URL of this portfolio you'll host -->
-    <meta property="twitter:url" content="https://devfolio.js.org" />
+    <meta property="twitter:url" href="./assets/devfolio-logo.png" />
     <!-- Recommended to use the same text used within <title> element -->
     <meta property="twitter:title" content="Víctor Izquierdo Alegre | Developer" />
     <!-- short description that shows up while your portfolio is shared -->
@@ -61,7 +57,7 @@ Have fun creating your portfolio on this template!!! -->
     <!-- Fill content with the URL to the thumbnail image that you'll put in the assets folder -->
     <meta
       property="twitter:image"
-      content="https://anilseervi.vercel.app/assets/devfolio.png"
+      href="./assets/devfolio-logo.png"
     />
 
     <!-- link tags -->
@@ -82,23 +78,6 @@ Have fun creating your portfolio on this template!!! -->
       type="text/javascript"
       src="./javascript/scrollveal.js"
     ></script>
-
-    <!-- Remove Google Analytics once you have your portfolio website set-up -->
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <!--<script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=UA-122228201-4"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || []
-      function gtag() {
-        dataLayer.push(arguments)
-      }
-      gtag("js", new Date())
-
-      gtag("config", "UA-122228201-4")
-    </script>-->
-    <!-- End of Google Analytics -->
   </head>
   <body>
     <!-- Hero Section -->
@@ -111,7 +90,7 @@ Have fun creating your portfolio on this template!!! -->
         </h1>
         <p class="hero-cta">
           <a class="cta-btn cta-btn--hero" href="mailto:vizcodev@gmail.com">Get in touch</a>
-        </p>
+        </p>     
       </section>
       <a href="#about" class="scroll-down-link-hero" aria-label="scroll-down">
         <div class="scroll-down-hero"></div
@@ -161,8 +140,16 @@ Have fun creating your portfolio on this template!!! -->
         <div class="project-wrapper">
           <h1 class="section-title dark-blue-text">Projects</h1>
 
+          <!-- Project Filters -->
+          <div class ="filters">
+            <div id="project-filters">
+              <button type="button" data-filter="all" class="cta-btn cta-btn--filter active">All</button>
+              <button type="button" data-filter="unitygames" class="cta-btn cta-btn--filter">Games</button>
+              <button type="button" data-filter="unityapps" class="cta-btn cta-btn--filter">Applications</button>
+            </div>
+          </div>
           <!-- Each .row is a project -->
-          <article class="row">
+          <article class="row unitygames">
             <div class="project-wrapper__text">
               <h3 class="project-wrapper__text-title">Gem Maker Tycoon - Final Degree Project [2023]</h3>
               <div class="project-wrapper__text-labelContainer">
@@ -196,7 +183,7 @@ Have fun creating your portfolio on this template!!! -->
               <a href="https://youtu.be/wDcoHXXg3VE" target="_blank" rel="noopener noreferrer">
                 <div class="thumbnail rounded">
                   <img
-                    src="./assets/tempIdle.png"
+                    src="./assets/Unity/tempIdle.png"
                     class="img-fluid"
                     alt="Project Image"
                     width="1366"
@@ -209,7 +196,7 @@ Have fun creating your portfolio on this template!!! -->
           <!-- /END Project -->
 
           <!-- Each .row is a project -->
-          <article class="row">
+          <article class="row unityapps">
             <div class="project-wrapper__text">
               <h3 class="project-wrapper__text-title">Sector 77 - AR Mobile Application [2023]</h3>
               <div class="project-wrapper__text-labelContainer">
@@ -227,11 +214,20 @@ Have fun creating your portfolio on this template!!! -->
                   target="_blank"
                   rel="noopener noreferrer"
                   class="cta-btn cta-btn--hero cta-btn--projects"
-                  >Video <i class="fa-brands fa-youtube"></i></a
-                >
-                <a href="https://play.google.com/store/apps/details?id=com.MindTrips.AppMindA&gl=ES" target="_blank" class="cta-btn cta-btn--projects text-color-main "
-                  >Google Play <i class="fa-brands fa-google-play"></i></a
-                >
+                  >Video <i class="fa-brands fa-youtube"></i>
+                </a>
+                <a  
+                  href="https://play.google.com/store/apps/details?id=com.MindTrips.AppMindA&gl=ES" 
+                  target="_blank" 
+                  class="cta-btn cta-btn--projects text-color-main "
+                  >Google Play <i class="fa-brands fa-google-play"></i>
+                </a>
+                <a  
+                  href="https://apps.apple.com/es/app/sector-77/id6447691973" 
+                  target="_blank" 
+                  class="cta-btn cta-btn--projects text-color-main "
+                  >App Store <i class="fa-brands fa-app-store-ios"></i>
+                </a>
               </div>
             </div>
 
@@ -239,7 +235,7 @@ Have fun creating your portfolio on this template!!! -->
               <a href="https://youtu.be/f-kWO7OtMa8" target="_blank" rel="noopener noreferrer">
                 <div class="thumbnail rounded">
                   <img
-                    src="./assets/sector77.png"
+                    src="./assets/Unity/sector77.png"
                     class="img-fluid"
                     alt="Project Image"
                     width="1366"
@@ -252,7 +248,7 @@ Have fun creating your portfolio on this template!!! -->
           <!-- /END Project -->
 
           <!-- Each .row is a project -->
-          <article class="row">
+          <article class="row unitygames">
             <div class="project-wrapper__text">
               <h3 class="project-wrapper__text-title">Lambda Project V - [2022]</h3>
               <div class="project-wrapper__text-labelContainer">
@@ -285,7 +281,7 @@ Have fun creating your portfolio on this template!!! -->
               <a href="https://youtu.be/huLkCtYI4fk" target="_blank" rel="noopener noreferrer">
                 <div class="thumbnail rounded">
                   <img
-                    src="./assets/lambdaProjectV.png"
+                    src="./assets/Unity/lambdaProjectV.png"
                     class="img-fluid"
                     alt="Project Image"
                     width="1366"
@@ -296,7 +292,7 @@ Have fun creating your portfolio on this template!!! -->
             </div>
           </article>
 
-          <article class="row">
+          <article class="row unitygames">
             <div class="project-wrapper__text">
               <h3 class="project-wrapper__text-title">Fountain of Memories - [2022]</h3>
               <div class="project-wrapper__text-labelContainer">
@@ -329,7 +325,7 @@ Have fun creating your portfolio on this template!!! -->
               <a href="https://youtu.be/3eq8XivygY0" target="_blank" rel="noopener noreferrer">
                 <div class="thumbnail rounded">
                   <img
-                    src="./assets/fountainOfMemories.png"
+                    src="./assets/Unity/fountainOfMemories.png"
                     class="img-fluid"
                     alt="Project Image"
                     width="1366"
@@ -350,7 +346,7 @@ Have fun creating your portfolio on this template!!! -->
       <div class="container">
         <h2 class="section-title">Contact</h2>
         <div class="contact-wrapper">
-          <p class="contact-wrapper__text">Thanks for your time!</p>
+          <p class="contact-wrapper__text">Thank you for your time!</p>
           <a href="mailto:vizcodev@gmail.com" class="cta-btn cta-btn--resume">Contact me</a>
         </div>
       </div>
@@ -381,12 +377,22 @@ Have fun creating your portfolio on this template!!! -->
             <i class="fa-brands fa-itch-io"></i>
           </a>
           <a
-            href="https://twitter.com/VizCoDev"
+
+            href="https://twitter.com/VizCoDev" 
             target="_blank"
             rel="noopener noreferrer"
             aria-label="twitter"
           >
-            <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-twitter"></i>
+          </a>
+
+          <a            
+            href="cplusplus.html" 
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="twitter"
+          >
+          <i class="fa-brands fa-portrait"></i>
           </a>
         </div>
         <hr />
@@ -408,5 +414,6 @@ Have fun creating your portfolio on this template!!! -->
     </script>
     <script src="./javascript/vanilla-tilt.min.js"></script>
     <script type="text/javascript" src="./javascript/valtilt.js"></script>
+    <script src="./javascript/filter.js"></script>
   </body>
 </html>
