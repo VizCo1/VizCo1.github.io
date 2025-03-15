@@ -1,0 +1,133 @@
+:root {
+  /* COLORS */
+  --primary-color: #9c76ac;
+  --secondary-color: #b071de;
+  --scroll-down-color-hero: #b071de;
+  --scroll-down-color-about: #ffe7b9;
+  --font-family: "Montserrat", sans-serif;
+
+  --light-white: #fff1cb;
+  --white-color: #ffe7b9;
+  --dark-grey: #333333;
+
+  --dark-blue-text: #726A95; /* For headings */
+
+  --LabelBorderColor: #eab7ff;
+  --LabelBorderStyle: groove;
+
+/* FONT SIZE */
+  --default-font-size: 1.4rem;
+  --mid-font-size: 2rem;
+  --big-font-size: 3rem;
+}
+
+html {
+  font-family: var(--font-family);
+  /* font-weight: bold; */
+}
+
+a {
+  font-family: var(--font-family);
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+body {
+  background-color: var(--scroll-down-color-about);
+  position: relative;
+}
+
+h1 {
+  text-align: center;
+  color: var(--primary-color);
+  font-size: var(--big-font-size);
+}
+
+h2 {
+  color: var(--dark-blue-text);
+  font-size: var(--mid-font-size);
+}
+
+h3 {
+  /* text-wrap: nowrap; */
+}
+
+p {
+  font-size: var(--default-font-size);
+}
+
+.nav-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* margin: 0 10px 10px 0; */
+}
+
+@media (orientation: landscape) {
+  .projects-container {
+    display: grid;
+    grid-template-columns: 48% 48%;
+    grid-template-rows: auto auto;
+    column-gap: 4%;
+    row-gap: 20px;
+    width: 95%;
+  }
+}
+
+@media (orientation: portrait) {
+  .projects-container {
+    width: 95%;
+  }
+}
+
+/* .project {  
+  width: 100%;
+  align-self: flex-start;
+  height: fit-content;
+} */
+
+iframe {
+  width: 100%;
+  border-width: 0;
+  border-radius: 10px;
+}
+
+.project-header {
+  display: flex;
+
+}
+
+.project-header > h3 {
+  margin: 0 10px 0 0;
+}
+
+.project-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.video-popup-container {
+  position: fixed;
+  /* display: flex; */
+  display: none;
+  align-items: center;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.55);
+  backdrop-filter: blur(3px);
+  padding: 10px;
+}
+
+.video-popup {
+  height: 100%;
+}
