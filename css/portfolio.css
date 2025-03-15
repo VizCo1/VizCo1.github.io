@@ -32,6 +32,10 @@ a {
   color: var(--primary-color);
 }
 
+button {
+  font-family: var(--font-family);
+}
+
 body {
   background-color: var(--scroll-down-color-about);
   position: relative;
@@ -91,12 +95,6 @@ main {
   margin: 20px 0 20px 0;
 }
 
-iframe {
-  width: 100%;
-  border-width: 0;
-  border-radius: 10px;
-}
-
 .project-header {
   display: flex;
 }
@@ -118,9 +116,9 @@ iframe {
 
 .video-popup-container {
   position: fixed;
-  display: none;
-  flex-direction: column;
+  display: flex;
   align-items: center;
+  flex-direction: column;
   left: 0;
   right: 0;
   top: 0;
@@ -130,12 +128,36 @@ iframe {
   padding: 10px;
 }
 
+iframe {
+  width: 100%;
+  border-width: 0;
+  border-radius: 10px;
+}
+
 .video-popup {
   height: 90%;
+  margin: 0;
 }
 
 #video-popup-close-button {
-  display: flex;
+  transition-duration: 0.15s;
+  background-color: rgba(51, 51, 51, 0.25);
+  color: rgba(255, 231, 185, 0.75);
+  font-weight: bold;
+  font-size: var(--default-font-size);
   margin: 10px 0 0 0;
-  align-self: self-end;
+  width: 100%;
+  height: 10%;
+  border-width: 0;
+  border-radius: 10px;
+}
+
+#video-popup-close-button:hover {
+  background-color: rgba(51, 51, 51, 0.5);
+  color: rgba(255, 231, 185, 1);
+}
+
+#video-popup-close-button:active {
+  background-color: rgba(51, 51, 51, 0.75);
+
 }
