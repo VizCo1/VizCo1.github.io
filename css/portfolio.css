@@ -118,8 +118,8 @@ iframe {
 
 .video-popup-container {
   position: fixed;
-  /* display: flex; */
   display: none;
+  flex-direction: column;
   align-items: center;
   left: 0;
   right: 0;
@@ -131,5 +131,11 @@ iframe {
 }
 
 .video-popup {
-  height: 100%;
+  height: 90%;
+}
+
+#video-popup-close-button {
+  display: flex;
+  margin: 10px 0 0 0;
+  align-self: self-end;
 }
