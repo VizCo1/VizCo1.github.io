@@ -116,7 +116,7 @@ main {
 
 .video-popup-container {
   position: fixed;
-  display: flex;
+  display: none;
   align-items: center;
   flex-direction: column;
   left: 0;
