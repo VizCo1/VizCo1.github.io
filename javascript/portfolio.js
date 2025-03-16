@@ -12,7 +12,6 @@ let canShowVideo = false;
 
 videoPopupCloseButton.onclick = function() { hideVideoPopup(); }
 projectButton01.onclick = function() { prepareVideoPopup(sites[0]); };
-// projectButton02.onclick = function() { prepareVideoPopup(sites[0]); };
 videoPopup.onload = function() { onVideoLoaded() };
 
 document.onkeydown = function(e) { 
