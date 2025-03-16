@@ -1,17 +1,41 @@
 const projectButton01 = document.getElementById("project-button-01");
 const projectButton02 = document.getElementById("project-button-02");
-const popupContainer = document.getElementById("video-popup-container");
-const popupCloseButton = document.getElementById("video-popup-close-button");
+const videoPopupContainer = document.getElementById("video-popup-container");
+const videoPopup = document.getElementById("video-popup");
+const videoPopupCloseButton = document.getElementById("video-popup-close-button");
 
-popupCloseButton.onclick = function() { hideVideoPopup(); }
-projectButton01.onclick = function() {showVideoPopup();};
+const sites = ['https://www.youtube.com/embed/tgbNymZ7vqY',
+  'http://gizmodo.com/',
+  'http://lifehacker.com/']
+
+videoPopupCloseButton.onclick = function() { hideVideoPopup(); }
+projectButton01.onclick = function() { prepareVideoPopup(sites[0]); };
+projectButton02.onclick = function() { prepareVideoPopup(sites[0]); };
+videoPopup.onload = function() { onVideoLoaded() };
+
 document.onkeydown = function(){ hideVideoPopup(); document.activeElement.blur(); };
 
-function showVideoPopup() {
-  popupContainer.style.display = "flex";
+let canShowVideo = false;
+
+function prepareVideoPopup(src) {
+  videoPopup.src = src + "?autoplay=1";
+  videoPopupContainer.style.visibility = "visible";
+  videoPopupContainer.style.opacity = 1;
+  canShowVideo = true;
+};
+
+function onVideoLoaded() {
+  if (canShowVideo) {
+    canShowVideo = false;
+    videoPopup.style.opacity = 1;
+  }
 };
 
 function hideVideoPopup() {
-  popupContainer.style.display = "none";
+  videoPopupContainer.style.visibility = "hidden";
+  videoPopupContainer.style.opacity = 0;
+  videoPopup.style.opacity = 0;
+
+  videoPopup.src = null;
 };
 

@@ -115,9 +115,10 @@ main {
 }
 
 .video-popup-container {
+  transition-duration: 0.15s;
   position: fixed;
-  display: none;
-  align-items: center;
+  display: flex;
+  visibility: hidden;
   flex-direction: column;
   left: 0;
   right: 0;
@@ -126,6 +127,7 @@ main {
   background-color: rgba(0, 0, 0, 0.55);
   backdrop-filter: blur(3px);
   padding: 10px;
+  opacity: 0;
 }
 
 iframe {
@@ -135,8 +137,10 @@ iframe {
 }
 
 .video-popup {
+  transition-duration: 0.3s;
   height: 90%;
   margin: 0;
+  opacity: 0;
 }
 
 #video-popup-close-button {
