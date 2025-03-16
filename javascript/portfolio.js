@@ -7,6 +7,8 @@ const videoPopupCloseButton = document.getElementById("video-popup-close-button"
 const sites = ['https://www.youtube.com/embed/tgbNymZ7vqY',
   'http://gizmodo.com/',
   'http://lifehacker.com/']
+  
+let canShowVideo = false;
 
 videoPopupCloseButton.onclick = function() { hideVideoPopup(); }
 projectButton01.onclick = function() { prepareVideoPopup(sites[0]); };
@@ -19,8 +21,6 @@ document.onkeydown = function(e) {
     document.activeElement.blur(); 
   }
 };
-
-let canShowVideo = false;
 
 function prepareVideoPopup(src) {
   videoPopup.src = src + "?autoplay=1";
