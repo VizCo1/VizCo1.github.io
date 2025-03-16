@@ -13,7 +13,12 @@ projectButton01.onclick = function() { prepareVideoPopup(sites[0]); };
 projectButton02.onclick = function() { prepareVideoPopup(sites[0]); };
 videoPopup.onload = function() { onVideoLoaded() };
 
-document.onkeydown = function(){ hideVideoPopup(); document.activeElement.blur(); };
+document.onkeydown = function(e) { 
+  if (e.key == "Escape") {
+    hideVideoPopup(); 
+    document.activeElement.blur(); 
+  }
+};
 
 let canShowVideo = false;
 
@@ -36,6 +41,6 @@ function hideVideoPopup() {
   videoPopupContainer.style.opacity = 0;
   videoPopup.style.opacity = 0;
 
-  videoPopup.src = null;
+  videoPopup.src = "";
 };
 
