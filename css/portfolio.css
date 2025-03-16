@@ -71,10 +71,9 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* margin: 0 10px 10px 0; */
 }
 
-@media (orientation: landscape) {
+@media (min-width: 1000px) and (not (orientation: portrait)) {
   .projects-container {
     display: grid;
     grid-template-columns: 48% 48%;
@@ -85,7 +84,7 @@ main {
   }
 }
 
-@media (orientation: portrait) {
+@media (orientation: portrait) or (max-width: 1000px) {
   .projects-container {
     width: 95%;
   }
@@ -163,5 +162,18 @@ iframe {
 
 #video-popup-close-button:active {
   background-color: rgba(51, 51, 51, 0.75);
+}
 
+.project-category-container {
+  display: flex;
+}
+
+.project-category {
+  background-color: var(--scroll-down-color-hero);
+  color: var(--scroll-down-color-about);
+  font-weight: bold;
+  margin: 5px 10px 5px 0;
+  padding: 4px 8px;
+  border: 3px solid var(--primary-color);
+  border-radius: 10px;
 }
