@@ -22,9 +22,13 @@
   </head>
   <body>
     <div class="video-popup-container" id="video-popup-container">
-      <iframe class="video-popup" id="video-popup" allow="autoplay"></iframe>
+      <div class="video-popup-loading-container">
+        <div id="video-popup-loading-icon"></div>
+      </div>
+
+      <iframe class="video-popup" id="video-popup" allow="autoplay">
+      </iframe>
       <button id="video-popup-close-button">CLICK HERE TO CLOSE THE VIDEO</button>
-      <!-- LOADING LOADING LOADING -->
     </div>
 
     <header>
@@ -58,17 +62,38 @@
     <main>
 
       <nav class="nav-main">
-        <button>
+        <button class="nav-main-item" data-filter="work">
           <h2>WORK EXPERIENCE</h2>
         </button>
-        <button>
+        <button class="nav-main-item" data-filter="personal">
           <h2>MY PROJECTS</h2>
         </button>
       </nav>
 
       <div class="projects-container">
         
-        <div class="project">
+        <div class="project" data-filter="work">
+
+          <div class="project-header">
+            <h3>PROJECT 01</h3>
+            <button id="project-button-01">Watch video</button>
+          </div>
+
+          <div class="project-category-container">
+            <div class="project-category">CATEGORY</div>
+            <div class="project-category">CATEGORY</div>
+          </div>
+
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+            Quisque ipsum justo, lacinia eu pellentesque in, pulvinar vitae tortor.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+            Quisque ipsum justo, lacinia eu pellentesque in, pulvinar vitae tortor.
+          </p>
+          <img src="./assets/Unity/DesktopUI.gif" alt="Desktop UI" class="project-image" />
+        </div>
+
+        <div class="project" data-filter="work">
 
           <div class="project-header">
             <h3>PROJECT 01</h3>
@@ -87,7 +112,7 @@
           <img src="./assets/Unity/DesktopUI.gif" alt="Desktop UI" class="project-image" />
         </div>
 
-        <div class="project">
+        <div class="project" data-filter="work">
 
           <div class="project-header">
             <h3>PROJECT 01</h3>
@@ -106,26 +131,7 @@
           <img src="./assets/Unity/DesktopUI.gif" alt="Desktop UI" class="project-image" />
         </div>
 
-        <div class="project">
-
-          <div class="project-header">
-            <h3>PROJECT 01</h3>
-            <button id="project-button-01">Watch video</button>
-          </div>
-
-          <div class="project-category-container">
-            <div class="project-category">CATEGORY</div>
-            <div class="project-category">CATEGORY</div>
-          </div>
-
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-            Quisque ipsum justo, lacinia eu pellentesque in, pulvinar vitae tortor.
-          </p>
-          <img src="./assets/Unity/DesktopUI.gif" alt="Desktop UI" class="project-image" />
-        </div>
-
-        <div class="project">
+        <div class="project" data-filter="personal">
 
           <div class="project-header">
             <h3>PROJECT 01</h3>
@@ -148,5 +154,6 @@
     </main>
 
     <script src="./javascript/portfolio.js"></script>
+    <script src="./javascript/filter.js"></script>
   </body>
 </html>

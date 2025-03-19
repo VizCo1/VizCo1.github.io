@@ -4,12 +4,13 @@
   --secondary-color: #b071de;
   --yellow-background-color: #ffe7b9;
   --dark-purple-color: #726A95; 
-  /* --test-color: #201E50; */
+  --transparent-color: rgba(0, 0, 0, 0);
+
   --font-family: "Montserrat", sans-serif;
 
-
 /* FONT SIZE */
-  --default-font-size: 1.2rem;
+  --default-font-size: 1.1rem;
+  --small-font-size: 1.5rem;
   --mid-font-size: 2rem;
   --big-font-size: 3rem;
 
@@ -20,6 +21,10 @@
 
 * {
   font-family: var(--font-family);
+}
+
+html {
+  overflow-y:scroll;
 }
 
 a {
@@ -42,6 +47,13 @@ h1 {
 h2 {
   color: var(--dark-purple-color);
   font-size: var(--mid-font-size);
+  margin: 0;
+}
+
+h3 {
+  /* font-style: italic; */
+  color: var(--primary-color);
+  font-size: var(--small-font-size);
   margin: 0;
 }
 

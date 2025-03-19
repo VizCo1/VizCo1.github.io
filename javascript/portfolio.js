@@ -3,6 +3,7 @@ const projectButton02 = document.getElementById("project-button-02");
 const videoPopupContainer = document.getElementById("video-popup-container");
 const videoPopup = document.getElementById("video-popup");
 const videoPopupCloseButton = document.getElementById("video-popup-close-button");
+const videoPopupLoadingIcon = document.getElementById("video-popup-loading-icon");
 
 const sites = ['https://www.youtube.com/embed/tgbNymZ7vqY',
   'http://gizmodo.com/',
@@ -23,14 +24,20 @@ document.onkeydown = function(e) {
 
 function prepareVideoPopup(src) {
   videoPopup.src = src + "?autoplay=1";
+  videoPopupLoadingIcon.style.display = "inherit";
   videoPopupContainer.style.visibility = "visible";
   videoPopupContainer.style.opacity = 1;
   canShowVideo = true;
 };
 
+function stopLoadingIcon() {
+  videoPopupLoadingIcon.style.display = "none";
+}
+
 function onVideoLoaded() {
   if (canShowVideo) {
     canShowVideo = false;
+    stopLoadingIcon();
     videoPopup.style.opacity = 1;
   }
 };
@@ -39,7 +46,5 @@ function hideVideoPopup() {
   videoPopupContainer.style.visibility = "hidden";
   videoPopupContainer.style.opacity = 0;
   videoPopup.style.opacity = 0;
-
   videoPopup.src = "";
 };
-
