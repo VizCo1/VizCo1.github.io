@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
             items.forEach(item => {
                 const itemFilter = item.getAttribute("data-filter");
                 if (filterValue === "all" || filterValue === itemFilter) {
-                    item.style.display = "initial";
+                    item.style.display = "flex";
                 } else {
                     item.style.display = "none";
                 }
