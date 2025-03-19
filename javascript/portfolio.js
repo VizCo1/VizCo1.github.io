@@ -3,7 +3,7 @@ const projectButton02 = document.getElementById("project-button-02");
 const videoPopupContainer = document.getElementById("video-popup-container");
 const videoPopup = document.getElementById("video-popup");
 const videoPopupCloseButton = document.getElementById("video-popup-close-button");
-const videoPopupLoadingIcon = document.getElementById("video-popup-loading-icon");
+const videoPopupLoadingContainer = document.getElementById("video-popup-loading-container");
 const projectButtons = document.querySelectorAll(".project-video-button");
 
 const sites = [
@@ -31,14 +31,14 @@ document.onkeydown = function(e) {
 
 function prepareVideoPopup(src) {
   videoPopup.src = src + "?autoplay=1";
-  videoPopupLoadingIcon.style.display = "inherit";
+  videoPopupLoadingContainer.style.display = "inherit";
   videoPopupContainer.style.visibility = "visible";
   videoPopupContainer.style.opacity = 1;
   canShowVideo = true;
 };
 
 function stopLoadingIcon() {
-  videoPopupLoadingIcon.style.display = "none";
+  videoPopupLoadingContainer.style.display = "none";
 }
 
 function onVideoLoaded() {
