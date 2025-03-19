@@ -1,0 +1,55 @@
+:root {
+  /* COLORS */
+  --primary-color: #9c76ac;
+  --secondary-color: #b071de;
+  --yellow-background-color: #ffe7b9;
+  --dark-purple-color: #726A95; 
+  /* --test-color: #201E50; */
+  --font-family: "Montserrat", sans-serif;
+
+
+/* FONT SIZE */
+  --default-font-size: 1.2rem;
+  --mid-font-size: 2rem;
+  --big-font-size: 3rem;
+
+/* TRANSITIONS */
+  --short-duration: 0.15s;
+  --medium-duration: 0.30s;
+}
+
+* {
+  font-family: var(--font-family);
+}
+
+a {
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+body {
+  background-color: var(--yellow-background-color);
+  position: relative;
+}
+
+h1 {
+  text-align: center;
+  color: var(--primary-color);
+  font-size: var(--big-font-size);
+  margin: 10px;
+}
+
+h2 {
+  color: var(--dark-purple-color);
+  font-size: var(--mid-font-size);
+  margin: 0;
+}
+
+p {
+  font-size: var(--default-font-size);
+  margin: 18px 0;
+}
+
+button {
+  cursor: pointer;
+}
