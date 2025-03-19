@@ -4,15 +4,22 @@ const videoPopupContainer = document.getElementById("video-popup-container");
 const videoPopup = document.getElementById("video-popup");
 const videoPopupCloseButton = document.getElementById("video-popup-close-button");
 const videoPopupLoadingIcon = document.getElementById("video-popup-loading-icon");
+const projectButtons = document.querySelectorAll(".project-video-button");
 
-const sites = ['https://www.youtube.com/embed/tgbNymZ7vqY',
-  'http://gizmodo.com/',
-  'http://lifehacker.com/']
+const sites = [
+  "https://www.youtube.com/embed/tgbNymZ7vqY",
+  "https://www.youtube.com/embed/Trxwwlbqskw",
+  "https://gomezjuanjose.github.io/",
+  "https://sadrmm.github.io/Portfolio/"]
+
+for (let i = 0; i < projectButtons.length; i++) {
+  let button = projectButtons[i];
+  button.onclick = function() { prepareVideoPopup(sites[i]) };
+}
   
 let canShowVideo = false;
 
-videoPopupCloseButton.onclick = function() { hideVideoPopup(); }
-projectButton01.onclick = function() { prepareVideoPopup(sites[0]); };
+videoPopupCloseButton.onclick = function() { hideVideoPopup(); };
 videoPopup.onload = function() { onVideoLoaded() };
 
 document.onkeydown = function(e) { 
