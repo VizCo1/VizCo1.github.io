@@ -29,7 +29,11 @@ html {
 
 a {
   font-weight: bold;
-  color: var(--yellow-background-color)
+  color: var(--yellow-background-color);
+}
+
+p > a {
+  color: var(--dark-purple-color);
 }
 
 body {

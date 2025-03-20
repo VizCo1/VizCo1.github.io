@@ -4,7 +4,7 @@ const videoPopupContainer = document.getElementById("video-popup-container");
 const videoPopup = document.getElementById("video-popup");
 const videoPopupCloseButton = document.getElementById("video-popup-close-button");
 const videoPopupLoadingContainer = document.getElementById("video-popup-loading-container");
-const projectButtons = document.querySelectorAll(".project-video-button");
+const projectButtons = document.querySelectorAll(".project-button");
 
 const sites = [
   "https://www.youtube.com/embed/tgbNymZ7vqY",
