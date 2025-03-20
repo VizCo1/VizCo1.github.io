@@ -10,7 +10,7 @@
 
 /* FONT SIZE */
   --default-font-size: 1.1rem;
-  --small-font-size: 1.5rem;
+  --small-font-size: 1.35rem;
   --mid-font-size: 2rem;
   --big-font-size: 3rem;
 
@@ -29,19 +29,21 @@ html {
 
 a {
   font-weight: bold;
-  color: var(--primary-color);
+  color: var(--yellow-background-color)
 }
 
 body {
   background-color: var(--yellow-background-color);
-  position: relative;
+  /* position: relative; */
+  margin-left: 0;
+  margin-right: 0;
 }
 
 h1 {
   text-align: center;
-  color: var(--primary-color);
+  color: var(--yellow-background-color);
   font-size: var(--big-font-size);
-  margin: 10px;
+  margin: 0 0 8px 0;
 }
 
 h2 {
@@ -51,7 +53,6 @@ h2 {
 }
 
 h3 {
-  /* font-style: italic; */
   color: var(--primary-color);
   font-size: var(--small-font-size);
   margin: 0;
@@ -60,6 +61,7 @@ h3 {
 p {
   font-size: var(--default-font-size);
   margin: 18px 0;
+  color: var(--dark-purple-color);
 }
 
 button {
