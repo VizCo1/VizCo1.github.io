@@ -166,11 +166,23 @@ main {
 }
 
 .project-image {
-  width: 100%;
-  margin: 0 0 0 0;
+  max-width: 100%;
+  margin: 0;
   height: auto;
   border-radius: 10px;
   aspect-ratio: 16/9;
+}
+
+.scape-image-background {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(35, 35, 35);
+}
+
+.scape-image {
+  width: 75%;
+  filter: brightness(0) saturate(100%) invert(89%) sepia(54%) saturate(786%) hue-rotate(329deg) brightness(113%) contrast(98%);
 }
 
 .project-category-container {

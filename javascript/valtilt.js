@@ -1,4 +1,4 @@
-let tilt = document.querySelectorAll(".rounded");
+let tilt = document.querySelectorAll(".project-image");
 VanillaTilt.init(tilt, {
   max: 3,
   speed: 500,
