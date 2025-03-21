@@ -16,12 +16,13 @@ header {
 
 .nav-header {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
 
 .nav-header > a {
-  margin: 0 15px;
+  margin: 0 8px;
   font-size: var(--small-font-size);
   text-align: center;
   text-decoration: none;
@@ -29,17 +30,17 @@ header {
   border-radius: 5px;
 }
 
-.view-resume-header-item {
+.nav-label-icon {
   transition-duration: var(--short-duration);
 }
 
-.view-resume-header-item:hover {
+.nav-label-icon:hover {
   background-color: var(--primary-color);
   transition-duration: var(--medium-duration);
   scale: 1.05;
 }
 
-.view-resume-header-item > i {
+.nav-label-icon > i {
   margin: 0 0 0 4px;
 }
 
@@ -156,12 +157,11 @@ main {
   height: auto;
   border-radius: 10px;
   aspect-ratio: 16/9;
-  object-fit: cover;
-  object-position: 0 0px;
 }
 
 .project-category-container {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .project-category {
@@ -169,13 +169,13 @@ main {
   color: var(--yellow-background-color);
   font-weight: bold;
   margin: 10px 10px 0 0;
-  padding: 0px 4px;
+  padding: 1px 6px;
   border: 4px groove var(--secondary-color);
   border-radius: 4px;
 }
 
 .project-category > i {
-  translate: 0 0.5px;
+  margin: 0 0 0 4px;
 }
 
 @media (min-width: 1000px) and (not (orientation: portrait)) {

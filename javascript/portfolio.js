@@ -10,7 +10,8 @@ const sites = [
   "https://www.youtube.com/embed/vlYayS5n3DM",
   "https://www.youtube.com/embed/f-kWO7OtMa8",
   "",
-  ""]
+  "https://www.youtube.com/embed/827fYIgjJ-8",
+  "https://www.youtube.com/embed/Mb-mD0S6K94"]
 
 for (let i = 0; i < projectButtons.length; i++) {
   let button = projectButtons[i];
@@ -30,6 +31,10 @@ document.onkeydown = function(e) {
 };
 
 function prepareVideoPopup(src) {
+
+  if (src === "")
+    return;
+  
   videoPopup.src = src + "?autoplay=1";
   videoPopupLoadingContainer.style.display = "inherit";
   videoPopupContainer.style.visibility = "visible";
