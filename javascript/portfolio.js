@@ -7,10 +7,10 @@ const videoPopupLoadingContainer = document.getElementById("video-popup-loading-
 const projectButtons = document.querySelectorAll(".project-button");
 
 const sites = [
-  "https://www.youtube.com/embed/tgbNymZ7vqY",
-  "https://www.youtube.com/embed/Trxwwlbqskw",
-  "https://gomezjuanjose.github.io/",
-  "https://sadrmm.github.io/Portfolio/"]
+  "https://www.youtube.com/embed/vlYayS5n3DM",
+  "https://www.youtube.com/embed/f-kWO7OtMa8",
+  "",
+  ""]
 
 for (let i = 0; i < projectButtons.length; i++) {
   let button = projectButtons[i];

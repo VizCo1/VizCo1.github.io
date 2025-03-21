@@ -114,7 +114,7 @@ main {
 
 .project-header > h3 {
   margin: 0 10px 0 0;
-  padding: 1px 5px 0 4px;
+  padding: 2px 5px 0 5px;
   border-width: 7px;
   border-style: solid;
   border-color: var(--dark-purple-color) var(--transparent-color) var(--transparent-color) var(--dark-purple-color);
@@ -152,9 +152,12 @@ main {
 }
 
 .project-image {
-  max-width: 100%;
+  width: 100%;
   height: auto;
   border-radius: 10px;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  object-position: 0 0px;
 }
 
 .project-category-container {
