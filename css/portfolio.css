@@ -22,7 +22,7 @@ header {
 }
 
 .nav-header > a {
-  margin: 0 8px;
+  margin: 0 12px;
   font-size: var(--small-font-size);
   text-align: center;
   text-decoration: none;
@@ -78,7 +78,7 @@ main {
 }
 
 .nav-main-item:hover {
-  background-color: var(--dark-purple-color);
+  background-color: rgba(114, 106, 149, 0.75);
   color: var(--yellow-background-color);
 }
 
@@ -91,6 +91,10 @@ main {
 }
 
 .active {
+  background-color: var(--dark-purple-color);
+}
+
+.active:hover {
   background-color: var(--dark-purple-color);
 }
 
