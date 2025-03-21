@@ -4,12 +4,12 @@ const videoPopupContainer = document.getElementById("video-popup-container");
 const videoPopup = document.getElementById("video-popup");
 const videoPopupCloseButton = document.getElementById("video-popup-close-button");
 const videoPopupLoadingContainer = document.getElementById("video-popup-loading-container");
-const projectButtons = document.querySelectorAll(".project-button");
+const projectButtons = document.querySelectorAll(".project-video-button");
 
 const sites = [
   "https://www.youtube.com/embed/vlYayS5n3DM",
   "https://www.youtube.com/embed/f-kWO7OtMa8",
-  "",
+  // "",
   "https://www.youtube.com/embed/827fYIgjJ-8",
   "https://www.youtube.com/embed/Mb-mD0S6K94"]
 

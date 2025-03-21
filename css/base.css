@@ -38,7 +38,6 @@ p > a {
 
 body {
   background-color: var(--yellow-background-color);
-  /* position: relative; */
   margin-left: 0;
   margin-right: 0;
 }

@@ -134,6 +134,10 @@ main {
   flex-grow: 1;
 }
 
+.project-button-container a {
+  text-decoration: none;
+}
+
 .project-button {
   transition-duration: var(--short-duration);
   display: flex;
