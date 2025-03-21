@@ -64,7 +64,7 @@ h3 {
 
 p {
   font-size: var(--default-font-size);
-  margin: 18px 0;
+  margin: 18px 0 10px 0;
   color: var(--dark-purple-color);
 }
 

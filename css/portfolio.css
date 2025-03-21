@@ -127,7 +127,11 @@ main {
 }
 
 .project-button-container {
-  margin: auto 0 10px 0;
+  display: flex;
+  margin: 0 0 4px 0;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  flex-grow: 1;
 }
 
 .project-button {
@@ -141,6 +145,7 @@ main {
   padding: 2px 8px;
   border: 3px solid var(--secondary-color);
   border-radius: 5px;
+  margin: 0 8px 8px 0;
 }
 
 .project-button:hover {
@@ -158,6 +163,7 @@ main {
 
 .project-image {
   width: 100%;
+  margin: 0 0 0 0;
   height: auto;
   border-radius: 10px;
   aspect-ratio: 16/9;
