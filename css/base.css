@@ -36,6 +36,14 @@ p > a {
   color: var(--dark-purple-color);
 }
 
+ul > a {
+  color: var(--dark-purple-color);
+}
+
+li > a {
+  color: var(--dark-purple-color);
+}
+
 body {
   background-color: var(--yellow-background-color);
   margin-left: 0;
@@ -63,8 +71,18 @@ h3 {
 
 p {
   font-size: var(--default-font-size);
-  margin: 18px 0 10px 0;
+  margin: 18px 0 5px 0;
   color: var(--dark-purple-color);
+}
+
+ul {
+  margin: 0 0 10px 0;
+}
+
+li {
+  margin: 0;
+  color: var(--dark-purple-color);
+  font-size: var(--default-font-size);
 }
 
 button {
