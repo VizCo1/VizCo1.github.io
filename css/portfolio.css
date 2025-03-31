@@ -108,6 +108,7 @@ main {
 }
 
 .project {  
+  transition-duration: var(--medium-duration);
   display: flex;
   flex-direction: column;
 }

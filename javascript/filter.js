@@ -16,10 +16,16 @@ document.addEventListener("DOMContentLoaded", function () {
     
         items.forEach(item => {
             const itemFilter = item.getAttribute("data-filter");
+
             if (filterValue === "all" || filterValue === itemFilter) {
                 item.style.display = "flex";
+                setTimeout(function() {
+                    item.style.opacity = 1;
+                }, 
+                0)
             } else {
                 item.style.display = "none";
+                item.style.opacity = 0;
             }
         });
     
