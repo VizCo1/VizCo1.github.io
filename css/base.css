@@ -46,8 +46,8 @@ li > a {
 
 body {
   background-color: var(--yellow-background-color);
-  margin-left: 0;
-  margin-right: 0;
+  margin: 22px auto 8px auto;
+  max-width: 1920px;
 }
 
 h1 {
