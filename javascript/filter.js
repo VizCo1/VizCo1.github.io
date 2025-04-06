@@ -14,11 +14,14 @@ document.addEventListener("DOMContentLoaded", function () {
         const filterValue = button.getAttribute("data-filter");
         const items = document.querySelectorAll(".project");
     
-        items.forEach(item => {
+        let lastActiveIndex = -1;
+        for (let i = 0; i < items.length; i++) {
+            let item = items[i];
             const itemFilter = item.getAttribute("data-filter");
 
             if (filterValue === "all" || filterValue === itemFilter) {
                 item.style.display = "flex";
+                lastActiveIndex = i;
                 setTimeout(function() {
                     item.style.opacity = 1;
                 }, 
@@ -26,8 +29,11 @@ document.addEventListener("DOMContentLoaded", function () {
             } else {
                 item.style.display = "none";
                 item.style.opacity = 0;
+                item.classList.remove("last-visible-project");
             }
-        });
+        }
+
+        items.item(lastActiveIndex).classList.add("last-visible-project");
     
         buttons.forEach(btn => btn.classList.remove("active"));
         button.classList.add("active");
