@@ -205,7 +205,7 @@ main {
   margin: 0 0 0 4px;
 }
 
-@media (min-width: 1000px) and (not (orientation: portrait)) {
+@media (min-width: 1001px) and (not (orientation: portrait)) {
   .projects-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
