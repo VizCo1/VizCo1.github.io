@@ -206,6 +206,14 @@ main {
   .nav-main {
     align-self: self-start;
   }  
+
+  .gallery .flickity-prev-next-button.previous {
+    left: 5px;
+  }
+
+  .gallery .flickity-prev-next-button.next {
+    right: 5px;
+  }
 }
 
 @media (orientation: portrait) or (max-width: 1000px) {
@@ -242,12 +250,13 @@ main {
 }
 
 .gallery .flickity-button {
+  opacity: 0.5;
   background: var(--yellow-background-color);
   border: 4px solid var(--yellow-background-color);
   border-radius: 5px;
   border-width: 2px;
-  width: 26px;
-  height: 26px;
+  width: 30px;
+  height: 30px;
 }
 
 .gallery .flickity-button:hover {
@@ -257,14 +266,6 @@ main {
 
 .gallery .flickity-button:disabled {
   display: none;
-}
-
-.gallery .flickity-prev-next-button.previous {
-  left: -13px;
-}
-
-.gallery .flickity-prev-next-button.next {
-  right: -13px;
 }
 
 .gallery .flickity-button:hover .flickity-button-icon {
