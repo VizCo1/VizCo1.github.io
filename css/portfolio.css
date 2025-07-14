@@ -170,7 +170,6 @@ main {
   max-width: 100%;
   margin: 0;
   height: auto;
-  border-radius: 10px;
   aspect-ratio: 16/9;
 }
 
@@ -179,6 +178,8 @@ main {
   align-items: center;
   justify-content: center;
   background-color: rgb(35, 35, 35);
+  height: auto;
+  width: 100%;
 }
 
 .scape-image {
@@ -222,6 +223,13 @@ main {
 }
 
 @media (orientation: portrait) or (max-width: 1000px) {
+
+  header {
+    padding: 17px 5px;
+    border-width: 0px;
+    border-radius: 15px;
+  }
+
   .projects-container {
     width: auto;
   }
@@ -241,4 +249,33 @@ main {
   .last-visible-project {
     margin: 0 0 14px 0;
   }
+}
+
+.gallery .flickity-viewport  {
+  border-radius: 10px;
+}
+
+.gallery .flickity-button:disabled {
+  display: none;
+}
+
+.gallery .flickity-page-dots {
+  bottom: 5px;
+}
+
+.gallery .flickity-page-dots:disabled {
+  display: none;
+}
+
+.gallery .flickity-page-dots .dot {
+  opacity: 0.5;
+  background: var(--dark-purple-color);
+}
+
+.gallery .flickity-page-dots .dot:only-child {
+  display: none;
+}
+
+.gallery .flickity-page-dots .dot.is-selected {
+  background: var(--dark-purple-color);
 }

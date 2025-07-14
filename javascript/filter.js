@@ -1,16 +1,20 @@
+const buttons = document.querySelectorAll(".nav-main-item");
 document.addEventListener("DOMContentLoaded", function () {
-    const buttons = document.querySelectorAll(".nav-main-item");
 
     buttons[0].classList.add("active");
-    filterProjects(buttons[0]);
 
     buttons.forEach(button => {
         button.onclick = function() { 
             filterProjects(button); 
         };    
     });
+});
 
-    function filterProjects(button) {
+window.addEventListener("load", (event) => {
+    filterProjects(buttons[0]);
+});
+
+function filterProjects(button) {
         const filterValue = button.getAttribute("data-filter");
         const items = document.querySelectorAll(".project");
     
@@ -22,6 +26,11 @@ document.addEventListener("DOMContentLoaded", function () {
             if (filterValue === "all" || filterValue === itemFilter) {
                 item.style.display = "flex";
                 lastActiveIndex = i;
+
+                // var carousel = item.querySelector(".gallery");
+                // var flkty = new Flickity(carousel);
+                // flkty.resize();
+
                 setTimeout(function() {
                     item.style.opacity = 1;
                 }, 
@@ -38,5 +47,3 @@ document.addEventListener("DOMContentLoaded", function () {
         buttons.forEach(btn => btn.classList.remove("active"));
         button.classList.add("active");
     };
-});
-

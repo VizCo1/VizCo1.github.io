@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -9,6 +8,7 @@
     <link rel="stylesheet" href="./css/portfolio.css">
     <link rel="stylesheet" href="./css/base.css">
     <link rel="stylesheet" href="./css/videoPopup.css">
+    <link rel="stylesheet" href="./flickity/flickity.css">
     <link rel="icon" type="image/png" href="./assets/devfolio-logo.png" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
     <!-- FontAwesome Icons link -->
@@ -20,6 +20,7 @@
       referrerpolicy="no-referrer"
     />
   </head>
+
   <body>
     <div class="video-popup-container" id="video-popup-container">
       <div id="video-popup-loading-container">
@@ -62,7 +63,7 @@
         
       </nav>
     </header>
-    
+
     <main>
 
       <nav class="nav-main">
@@ -122,9 +123,11 @@
               </button>
             </a>
           </div>
-
-          <div class="project-image scape-image-background">
-            <img src="./assets/Unity/ScapeLogoWhite.svg" alt="Desktop UI" class="scape-image project-image " />
+          
+          <div class="js-flickity gallery" data-flickity-options='{ "wrapAround": true }'>
+            <div class="scape-image-background project-image">
+              <img src="./assets/Unity/ScapeLogoWhite.svg" alt="Scape logo" class="scape-image project-image"/>
+            </div>
           </div>
         </div>
 
@@ -173,7 +176,9 @@
             </a>
           </div>
 
-          <img src="./assets/Unity/sector77LaResistencia.png" alt="Desktop UI" class="project-image" />
+          <div class="js-flickity gallery" data-flickity-options='{ "wrapAround": true }'>
+            <img src="./assets/Unity/sector77LaResistencia.png" alt="sector 77 la resistencia" class="project-image" />
+          </div>
         </div>
 
         <!-- WORK PROJECT -->
@@ -220,7 +225,9 @@
             </a>
           </div>
 
-          <img src="./assets/Unity/sector77.png" alt="Desktop UI" class="project-image" />
+          <div class="js-flickity gallery" data-flickity-options='{ "wrapAround": true }'>
+            <img src="./assets/Unity/sector77.png" alt="Sector 77" class="project-image" />
+          </div>
         </div>
 
         <!-- PERSONAL PROJECT -->
@@ -276,7 +283,9 @@
             </a>
           </div>
 
-          <img src="./assets/Unity/DesktopUI.gif" alt="Desktop UI" class="project-image" />
+          <div class="js-flickity gallery" data-flickity-options='{ "wrapAround": true }'>
+            <img src="./assets/Unity/DesktopUI.gif" alt="Desktop UI" class="project-image" />
+          </div>
         </div>
 
         <!-- PERSONAL PROJECT -->
@@ -339,7 +348,9 @@
             </a>
           </div>
 
-          <img src="./assets/Unity/TimeTickCemeteryGIF.gif" alt="Desktop UI" class="project-image" />
+          <div class="js-flickity gallery" data-flickity-options='{ "wrapAround": true }'>
+            <img src="./assets/Unity/TimeTickCemeteryGIF.gif" alt="Desktop UI" class="project-image" />
+          </div>
         </div>
         
       </div>    
@@ -347,5 +358,6 @@
 
     <script src="./javascript/portfolio.js"></script>
     <script src="./javascript/filter.js"></script>
+    <script src="./flickity/flickity.pkgd.js"></script>
   </body>
 </html>
