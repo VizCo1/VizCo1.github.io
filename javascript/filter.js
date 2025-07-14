@@ -1,8 +1,8 @@
 const buttons = document.querySelectorAll(".nav-main-item");
+
 document.addEventListener("DOMContentLoaded", function () {
-
     buttons[0].classList.add("active");
-
+    
     buttons.forEach(button => {
         button.onclick = function() { 
             filterProjects(button); 
@@ -27,9 +27,9 @@ function filterProjects(button) {
                 item.style.display = "flex";
                 lastActiveIndex = i;
 
-                // var carousel = item.querySelector(".gallery");
-                // var flkty = new Flickity(carousel);
-                // flkty.resize();
+                var carousel = item.querySelector(".gallery");
+                var flkty = new Flickity(carousel);
+                flkty.resize();
 
                 setTimeout(function() {
                     item.style.opacity = 1;
