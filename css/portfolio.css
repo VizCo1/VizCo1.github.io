@@ -277,7 +277,7 @@ main {
 }
 
 .gallery .flickity-page-dots {
-  bottom: -9px;
+  bottom: -7px;
   height: 18px;
 }
 
@@ -290,7 +290,7 @@ main {
   background: var(--yellow-background-color);
   width: 24px;
   height: 16px;
-  border: solid 2px var(--yellow-background-color);
+  border: solid 4px var(--dark-purple-color);
   border-radius: 10px;
 }
 
